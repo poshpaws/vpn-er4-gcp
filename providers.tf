@@ -7,12 +7,11 @@ terraform {
   }
 }
 
-locals {
-  tf_state_bucket = format("%s-tf_state_bucket",lower(data.google_project.trident45.name))
-}
-
+variable "region" {}
+variable "project" {}
+  
 provider "google" {
-    project = "trident45"
-    region = "europe-west2"
+    project = var.project
+    region = var.region
   # Configuration options
 }

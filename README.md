@@ -5,7 +5,8 @@ your going to need a terraform.tfvars like this :
 ourip = "xxx.yyy.zzz.aaa"
 peer_asn = 64515
 my_asn = 64514
-
+project =
+region =
 
 
 site ip address
